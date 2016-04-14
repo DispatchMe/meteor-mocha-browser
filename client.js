@@ -1,6 +1,3 @@
-// We need to import the "mocha.js" file specifically because that is the browser entry point.
-import 'mocha/mocha.js';
-
 let reporter;
 if (process.env.CLIENT_TEST_REPORTER) {
   reporter = require(process.env.CLIENT_TEST_REPORTER);
@@ -13,11 +10,6 @@ if (process.env.CLIENT_TEST_REPORTER) {
   link.setAttribute('href', 'https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css');
   document.head.appendChild(link);
 }
-
-// This defines "describe", "it", etc.
-mocha.setup({
-  ui: 'bdd',
-});
 
 // Add the div#mocha in which test results HTML will be placed
 const div = document.createElement('div');
