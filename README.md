@@ -27,11 +27,3 @@ The default Mocha reporter for server tests is the "spec" reporter. You can set 
 ```bash
 SERVER_TEST_REPORTER="dot" meteor test --driver-package dispatch:mocha-browser
 ```
-
-### Run with a different client reporter
-
-The default Mocha reporter for client tests is the "HTML" reporter. You can set the `CLIENT_TEST_REPORTER` environment variable to the name of a different Node module to provide your own browser reporter.
-
-```bash
-CLIENT_TEST_REPORTER="my-browser-reporter" meteor test --driver-package dispatch:mocha-browser
-```
