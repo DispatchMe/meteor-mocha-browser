@@ -1,3 +1,5 @@
+import { mocha } from 'meteor/dispatch:mocha-core';
+
 let reporter;
 if (process.env.CLIENT_TEST_REPORTER) {
   reporter = require(process.env.CLIENT_TEST_REPORTER);
