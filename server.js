@@ -1,4 +1,4 @@
-import { mochaInstance } from 'meteor/dispatch:mocha-core';
+import { mochaInstance } from 'meteor/practicalmeteor:mocha-core';
 
 const reporter = process.env.SERVER_TEST_REPORTER || 'spec';
 

@@ -1,4 +1,4 @@
-import { mocha } from 'meteor/dispatch:mocha-core';
+import { mocha } from 'meteor/practicalmeteor:mocha-core';
 
 let reporter;
 if (process.env.CLIENT_TEST_REPORTER) {
